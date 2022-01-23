@@ -14,13 +14,8 @@ car_size = [0.8, 0.5, 0.3]
 cas = [0.5, [0, -2, 0]]
 
 def main():
-    # geometries = []
-    # geometries.append(v.create_coordinate_axis(cas))
-    # geometries.append(v.create_car(car_size))
-    # geometries.append(p.read_data(path, files, i))
-    # v.draw_geometries(geometries, view)
     coordinate_axis = v.create_coordinate_axis(cas)
-    car = v.create_car(car_size)
+    car = v.create_better_car(car_size)
     v.visualize(car, coordinate_axis, window_size, len(files), path, files)
 
 main()
